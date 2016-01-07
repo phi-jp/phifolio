@@ -59,12 +59,12 @@ block content
 
   div#app.container.main
     br
+    input(v-model='query')
     div.row
-      div.col.s12.m6.l4(v-for='item in items', v-if='item.visible !== false')
+      div.col.s12.m6.l4(v-for='item in items | filterBy query in "name"', transition="staggered", v-if='item.visible !== false')
         div.card.item
           div.card-image
-            a(href='{{item.url}}', target='_blank')
-              img(v-bind:src='item.img')
+            a.cover(href='{{item.url}}', target='_blank' style="background-image: url('{{item.img}}')")
           div.card-content
             span.card-title {{item.name}}
 

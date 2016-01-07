@@ -1,29 +1,28 @@
 
 @media only screen and (min-width: 601px) {
   .main {
-    width: 580px;
+    width: 540px;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .main {
-    width: 900px;
+    width: 800px;
   }
 }
 
 .item.card {
   .card-image {
-    height: 200px;
+    height: 240px;
     overflow: hidden;
     border-bottom: 1px solid rgba(200, 200, 200, 0.5);
-    img {
-      margin: auto;
+    a {
+      display: block;
       height: 100%;
-      width: auto;
     }
   }
   .card-content {
-    height: 240px;
+    height: 200px;
 
     .card-title {
       color: orange;
@@ -36,7 +35,20 @@
         height: 28px;
         line-height: 28px;
       }
-      /*height: 2rem;*/
     }
   }
+}
+
+.cover {
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.staggered-transition {
+  transition: all 0.5s ease;
+}
+.staggered-enter, .staggered-leave {
+  opacity: 0;
 }
