@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.get('/', function(req, res, next) {
   res.render('index', {
     title: "phi's portfolio",
-    url: "http://phiary.me",
+    url: "http://phifolio.me",
     email: 'phi1618jp@gmail.com',
     description: 'phi のポートフォリオです.',
     keywords: 'web,javascript',

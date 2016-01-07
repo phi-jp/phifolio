@@ -2,4 +2,33 @@
 extends ./layout
 
 block content
-  h2 hoge
+  header
+    nav.light-blue.darken-1
+      div.container
+        div.row
+          div.col.s12
+            a(href='/').brand-logo
+              span phina.js
+            a.button-collapse(data-activates="nav-mobile")
+              i.material-icons menu
+            ul#nav.right.hide-on-med-and-down
+              li
+                a(href='http://phiary.me', target='_blank') Blog
+              li
+                a(href='https://twitter.com', target='_blank') Twitter
+              li
+                a(href='https://github.com/phi-jp', target='_blank') Github
+              li
+                a(href='phi1618jp@gmail.com', target='_blank') Contact
+            ul#nav-mobile.side-nav
+              li
+                a(href='http://phiary.me', target='_blank') Blog
+              li
+                a(href='https://twitter.com', target='_blank') Twitter
+              li
+                a(href='https://github.com/phi-jp', target='_blank') Github
+              li
+                a(href='phi1618jp@gmail.com', target='_blank') Contact
+
+    script.
+      $(".button-collapse").sideNav();
