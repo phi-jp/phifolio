@@ -1,0 +1,13 @@
+items:
+  - name: About
+    url: /about
+    tags: []
+  - name: Blog
+    url: http://phiary.me
+  - name: phina.js
+    url: http://phinajs.com
+    tags: ["library"]
+  - name: Runstant
+    url: /about
+  - name: 暇人の遊び
+    url: hoge.html
