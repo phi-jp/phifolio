@@ -29,3 +29,9 @@ items:
     url: hoge.html
     tags: ["game", "app"]
     visible: false
+  - name: tap.js
+    img: https://www.evernote.com/l/AOLcz5vkHzxJ2ZXrsrHOqE9dm9tqzbz1EbgB/image.png
+    description: 画面をタップするとエフェクトが出るよ.
+    url: http://phi-jp.github.io/tap.js/
+    tags: ["plugin"]
+    visible: false
