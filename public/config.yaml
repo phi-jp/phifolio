@@ -23,15 +23,14 @@ items:
     description: phina.js で作ったゲームアプリです.
     url: http://flickarrow.phinajs.com/
     tags: ["game", "app"]
-  - name: 暇人の遊び
-    img: https://www.evernote.com/l/AOKAp0ewB3VOo7c2MxLUiqZXM0YpTgXI6WQB/image.jpg
-    description: phina.js で作ったゲームアプリです.
-    url: hoge.html
-    tags: ["game", "app"]
-    visible: false
   - name: tap.js
     img: https://www.evernote.com/l/AOLcz5vkHzxJ2ZXrsrHOqE9dm9tqzbz1EbgB/image.png
     description: 画面をタップするとエフェクトが出るよ.
     url: http://phi-jp.github.io/tap.js/
     tags: ["plugin"]
+  - name: 暇人の遊び
+    img: https://www.evernote.com/l/AOKAp0ewB3VOo7c2MxLUiqZXM0YpTgXI6WQB/image.jpg
+    description: phina.js で作ったゲームアプリです.
+    url: hoge.html
+    tags: ["game", "app"]
     visible: false
