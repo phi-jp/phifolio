@@ -12,7 +12,7 @@ items:
     img: https://www.evernote.com/l/AOLCbNqDCH5Ph4GwxFVxphb0hZSpMbamgRcB/image.png
     description: ゲームライブラリです.
     url: http://phinajs.com
-    tags: ["library"]
+    tags: ["library", 'javascript']
   - name: Runstant
     img: https://www.evernote.com/l/AOI2Sc0z9ANFH5cOd8-z-SECIcW1d6z30A4B/image.jpg
     description: Web 上でコーディングができるツールです.
@@ -27,7 +27,7 @@ items:
     img: https://www.evernote.com/l/AOLcz5vkHzxJ2ZXrsrHOqE9dm9tqzbz1EbgB/image.png
     description: 画面をタップするとエフェクトが出るよ.
     url: http://phi-jp.github.io/tap.js/
-    tags: ["plugin"]
+    tags: ["plugin", 'javascript']
   - name: 暇人の遊び
     img: https://www.evernote.com/l/AOKAp0ewB3VOo7c2MxLUiqZXM0YpTgXI6WQB/image.jpg
     description: phina.js で作ったゲームアプリです.

@@ -41,36 +41,33 @@ block content
       p phi + portfolio
       br
       br
+  div#app
+    section
+      nav.white.blue-text
+        div.nav-wrapper
+          div.container
+            div.input-field
+              input#search(type='search', v-model='query')
+              label(for='search')
+                i.blue-text.material-icons search
 
-  section
-    nav.white.blue-text
-      div.container
-        div.row
-          div.col
-            ul
-              li
-                a.blue-text About
-              li
-                a.blue-text Product
-              li
-                a.blue-text Library
-              li
-                a.blue-text Plugin
+    div.container.main
+      br
+      div.tags
+        a.chip(v-for='tag in tags', :class='{active: tag.active}', v-on:click='toggleTag(tag)') {{tag.name}}
+      br
+      div.row
+        div.col.s12.m6.l4(v-for='item in items | hoge', transition="staggered", v-if='item.visible !== false')
+          div.card.item
+            div.card-image
+              a.cover(href='{{item.url}}', target='_blank' style="background-image: url('{{item.img}}')")
+            div.card-content
+              span.card-title {{item.name}}
 
-  div#app.container.main
-    br
-    input(v-model='query')
-    div.row
-      div.col.s12.m6.l4(v-for='item in items | filterBy query in "name"', transition="staggered", v-if='item.visible !== false')
-        div.card.item
-          div.card-image
-            a.cover(href='{{item.url}}', target='_blank' style="background-image: url('{{item.img}}')")
-          div.card-content
-            span.card-title {{item.name}}
-
-            div.card-chips
-              a.chip(v-for='tag in item.tags', href='#') {{tag}}
-            p {{item.description}}
+              div.card-chips
+                span.chip.small(v-for='tag in item.tags', href='#')
+                  span(v-on:click='activeTag(tag)') {{tag}}
+              p {{item.description}}
 
 
   script(src='scripts/main.js')
