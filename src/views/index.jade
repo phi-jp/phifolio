@@ -61,7 +61,7 @@ block content
         div.col.s12.m6.l4(v-for='item in items | hoge', transition="staggered", v-if='item.visible !== false')
           div.card.item
             div.card-image
-              a.cover(href='{{item.url}}', target='_blank' style="background-image: url('{{item.img}}')")
+              a.cover(href='{{item.url}}', target='_blank', :style="{ 'background-image': 'url(' + item.img + ')' }")
             div.card-content
               span.card-title {{item.name}}
 
