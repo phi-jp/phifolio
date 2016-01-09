@@ -42,14 +42,14 @@ block content
       br
       br
   div#app
-    section
-      nav.white.blue-text
-        div.nav-wrapper
-          div.container
-            div.input-field
-              input#search(type='search', v-model='query')
-              label(for='search')
-                i.blue-text.material-icons search
+    nav.white.blue-text
+      div.nav-wrapper
+        div.container
+          div.input-field
+            input#search(type='search', v-model='query')
+            label(for='search')
+              i.blue-text.material-icons search
+            i.blue-text.material-icons(v-on:click='clear') close
 
     div.container.main
       br
@@ -69,5 +69,25 @@ block content
                   span(v-on:click='activeTag(tag)') {{tag}}
               p {{item.description}}
 
+  footer.page-footer.light-blue.darken-1
+    div.container
+      div.row
+        div.col.s12.m8
+          h5.white-text Title
+          p.grey-text.text-lighten-4
+            | Text Text Text Text Text Text Text Text Text Text 
+        div.col.s12.m4
+          h5.white-text Contact
+          ul
+            li.
+              <a href="https://twitter.com/phi_jp" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @phi_jp</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            li.
+              <iframe src="https://ghbtns.com/github-btn.html?user=phi-jp&type=follow&count=false&size=large" frameborder="0" scrolling="0"></iframe>
+
+    div.footer-copyright
+      div.container.center-align
+        | Copyright © 2015 phi. All Rights Reserved.
+        //- a.grey-text.text-lighten-4.right MIT
 
   script(src='scripts/main.js')

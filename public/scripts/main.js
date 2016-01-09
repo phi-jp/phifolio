@@ -19,6 +19,9 @@ var init = function(config) {
       ]
     },
     methods: {
+      clear: function() {
+        this.query = '';
+      },
       toggleTag: function(tag) {
         tag.active = !tag.active;
       },
