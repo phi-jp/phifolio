@@ -2,6 +2,7 @@
 $.ajax('config.yaml').done(function(data) {
   var config = jsyaml.load(data);
   init(config);
+  game();
 });
 
 
@@ -74,4 +75,14 @@ var init = function(config) {
       active: false,
     }
   });
+};
+
+var game = function() {
+  var canvas = document.querySelector('.game');
+  var width = canvas.width = canvas.parentNode.clientWidth;
+  var height = canvas.height = canvas.parentNode.clientHeight;
+  var ctx = canvas.getContext('2d');
+
+  ctx.fillStyle = 'hsl(200, 80%, 80%)';
+  ctx.fillRect(0, 0, width, height);
 };
